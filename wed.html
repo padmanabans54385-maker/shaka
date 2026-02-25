@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="wed.css">
+</head>
+<body>
+
+    <!-- Page 1 -->
+    <section class="page active" id="page1">
+        <div class="content">
+            <img src="https://i.imgur.com/0y0y0y0.jpg" class="couple-img">
+            <h1>Shakthi ❤️ Kalki</h1>
+            <p class="quote">"Two hearts, one soul, a promise forever."</p>
+            <button onclick="nextPage(2)">Next</button>
+        </div>
+    </section>
+
+    <!-- Page 2 -->
+<section class="page" id="page2">
+    <canvas id="fireworks"></canvas>
+    <div class="hearts"></div>
+
+    <div class="content">
+        <h2>Wedding Ceremony</h2>
+        <p>We are getting married!</p>
+
+        <div class="countdown">
+            <div><span id="days">00</span><small>Days</small></div>
+            <div><span id="hours">00</span><small>Hours</small></div>
+            <div><span id="minutes">00</span><small>Minutes</small></div>
+            <div><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+
+        <p><strong>Date:</strong> 30th April 2026</p>
+        <p><strong>Time:</strong> 10:30 AM</p>
+        <p><strong>Venue:</strong> Ayyanar Vadhana Wedding Mahal</p><br>
+
+        <button onclick="nextPage(3)">Next</button>
+    </div>
+</section>
+
+    <!-- Page 3 -->
+    <section class="page" id="page3">
+        <div class="content">
+            <h2>Wedding Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="300" height="250" style="border:0;" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+            <p>We look forward to celebrating with you!</p>
+        </div>
+    </section>
+
+<script src="wed.js"></script>
+</body>
+</html>
